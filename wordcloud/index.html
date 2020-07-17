@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html class=''>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name="robots" content="noindex">
+
+		<link rel="canonical" href="http://codepen.io/anon/pen/BjwqMy" />
+
+
+		<style class="cp-pen-styles"></style>
+	</head>
+
+	<body>
+		<div id="myCanvasContainer">
+    		<canvas width="700" height="500" id="myCanvas">
+      			<p>Anything in here will be replaced on browsers that support the canvas element</p>
+    		</canvas>
+  		</div>
+  		<div id="tags"  style="font-size: 50%">
+			<a href="#" style="font-size: 9.64ex">Peking opera</a>
+			<a href="#" style="font-size: 6.47ex">Confucius</a>
+			<a href="#" style="font-size: 3.46ex">Lion dance</a>
+			<a href="#" style="font-size: 20.83ex">Chinese</a>
+			<a href="#" style="font-size: 12.32ex">Pipa</a>
+			<a href="#" style="font-size: 6.74ex">Chinese knot</a>
+			<a href="#" style="font-size: 3.16ex">Dumplings</a>
+			<a href="#" style="font-size: 3.74ex">Couplet</a>
+			<a href="#" style="font-size: 3.16ex">Facial Makeup</a>
+			<a href="#" style="font-size: 18.61ex">Culture</a>
+			<a href="#" style="font-size: 8.36ex">Tang poetry</a>
+			<a href="#" style="font-size: 4.36ex">Tai Ji</a>
+			<a href="#" style="font-size: 3.32ex">Chinese painting</a>
+			<a href="#" style="font-size: 10.68ex">Moon Cake</a>
+			<a href="#" style="font-size: 4.69ex">Chinese Porcelain</a>
+			<a href="#" style="font-size: 14.8ex">Kung Fu</a>
+			<a href="#" style="font-size: 8.47ex">Silk</a>
+			<a href="#" style="font-size: 2.65ex">Chinese zither</a>
+			<a href="#" style="font-size: 8.77ex">Eight Diagrams</a>
+			<a href="#" style="font-size: 2.65ex">Forbidden City</a>
+ 		</div>
+		<script src='js/stopExecutionOnTimeout.js'></script>
+		<script src='js/jquery.min.js'></script>
+		<script src='js/jquery.tagcanvas.min.js'></script>
+		<script>
+			$(document).ready(function () {
+    		if (!$('#myCanvas').tagcanvas({
+    			initial: [-0.08,-0.13],
+    			outlineMethod: 'colour',
+            	outlineColour: '#ff00ff',
+            	freezeDecel: true,
+            	reverse: true,
+            	depth: 0.8,
+            	maxSpeed: 0.05,
+            	textFont: null,
+            	textColour: null,
+            	weightMode: 'both',
+            	weight: true,
+            	dragControl: false,
+            	
+            	weightGradient: {
+                	0: '#C02626', 
+                	0.33: '#DA4B4B',
+                	0.66: '#B23D7B',
+                	1: '#FD7E7E'
+            	}
+        	}, 'tags')) {
+        		$('#myCanvasContainer').hide();
+    			}
+			});
+//# sourceURL=pen.js
+		</script>
+	</body>
+</html>
