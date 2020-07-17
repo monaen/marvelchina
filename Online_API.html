@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+  Workshop - Data Visualization of Chinese Culture  
+</title>
+<link href="stylesheets/style.css" rel="stylesheet">
+<link href="stylesheets/bootstrap-rev0.css" rel="stylesheet">
+<link href="stylesheets/iris-rev3.css" rel="stylesheet">
+<script type="text/javascript">
+        function showhide(id) {
+            var e = document.getElementById(id);
+            e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+        }
+</script>
+</head>
+<body>
+<div class="container core-frame">
+  <div class="row">
+    <h3  align = "center"><img src = "./image/logo.png" width = "150px"/><img id="img" src="./image/title.jpg" width = "640px" height = "96px"/></h3>
+    </br>
+  </div>
+</div>
+  <div class="container core-frame">
+  <div class="row core-block header">
+    <nav>
+      <ul class="nav nav-pills pull-right">
+        
+          <li><a href="./index.html">Welcome</a></li>
+        
+          <li><a href="./Projects.html">Projects</a></li>
+        
+          <li class="active"><a href="./Online_API.html">Online API</a></li>
+        
+          <li><a href="./Contributors.html">Contributors</a></li>
+        
+          <li><a href="./Supplement.html">Supplement</a></li>
+      </ul>
+    </nav>
+    <h4 class="text-muted">Winter 2016</h4>
+  </div>
+</div>
+
+
+
+<div class="container core-frame">
+    <h1 align="center"><font face = "Times">Online API</font> <a name="Title"></a></h1>  <br />
+    <p align="justify">
+        <font size="4" face="Times">
+            People impressed by our work maybe show interest in how to visualize their own data. We bulid this site offering you some online APIs which may provide some help for showing your won dataset.
+        </font>
+    </p>
+    <h2 align="center"><font face = "Times"> Word Cloud API</font></h2>
+    <div class="sidebar online_only">
+        <div class="titlepage"><div><div><div class="sidebar-title">Try It Now!</div></div></div></div>
+            <p id="change_the_last_id1">Change the last line of the D3 code below from <code class="literal">.text("New paragraph!");</code> to <code class="literal">.text(function(d) { return d; });</code> and see the results change to match <a class="xref" href="ch05.html#more_dynamic_paragraphs" title="Figure 5-11. More dynamic paragraphs">Figure 5-11</a>.</p>
+            
+            <div class="interactive">
+                <p class="outlink"><a class="outlink" href="http://jsbin.com/fepomok/edit?html,output" target="_blank">Open in new window</a></p>
+                <iframe style="width: 100%; height: 600px;" src="http://jsbin.com/fepomok/edit?html,output"> </iframe>
+            </div>
+    </div>
+
+
+    <h2 align="center"><font face = "Times">Motion Chart API</font></h2>
+    <div class="sidebar online_only">
+        <div class="titlepage"><div><div><div class="sidebar-title">Try It Now!</div></div></div></div>
+            <p id="change_the_last_id1">Change the last line of the D3 code below from <code class="literal">.text("New paragraph!");</code> to <code class="literal">.text(function(d) { return d; });</code> and see the results change to match <a class="xref" href="ch05.html#more_dynamic_paragraphs" title="Figure 5-11. More dynamic paragraphs">Figure 5-11</a>.</p>
+            
+            <div class="interactive">
+                <p class="outlink"><a class="outlink" href="http://jsbin.com/pumoja/edit?html,output" target="_blank">Open in new window</a></p>
+                <iframe style="width: 100%; height: 600px;" src="http://jsbin.com/pumoja/edit?output"> </iframe>
+            </div>
+    </div>
+
+
+
+
+    <h2 align="center"><font face = "Times">Imports and Exports Books</font></h2>
+    <div align="center">
+        <iframe src="https://wandering007.shinyapps.io/export_app/" marginwidth="0" marginheight="0" scrolling="no" width='740px' height='800px' frameBorder='0'></iframe>
+    </div>
+    <div align = "right">
+        <button type="button" onclick="javascript:showhide('uniquename')">
+            How to use
+        </button>
+    </div>
+
+  <div id="uniquename" style="display:none;">
+    <br />
+    <p align="justify"><font size = "4" face = "Times">
+        A Shiny app visualizing the export status of cultural publication of China from 2008 to 2014.
+        
+    <p align="justify"><strong>Ways to use the app:</strong><br>Download the repository to local. Launch the app in R with the following commands:</p>
+    <div align = "left" style = "background-color:#d9d9d9; color:#800000; padding:5px;">
+    <p style="color:green;">#install.packages("shiny")<br>
+        #setwd("/path/to/local/") --set the working directory<br></p>
+        library(shiny)<br>
+        runApp("export_app")<br>
+        runUrl
+    </div>
+    <p align="justify">I've saved the Shiny app's directory as a zip file(i.e. export_app.zip). runUrl will download and launch a Shiny app straight from a weblink. That is:</p>
+    <div align = "left" style = "background-color:#d9d9d9; color:#800000; padding:5px;">
+        library(shiny)<br>
+        runUrl("https://raw.githubusercontent.com/wandering007/export_app/master/export_app.zip")<br>
+        runGitHub
+    </div>
+    <p align="justify">You can launch the app by running:</p>
+    <div align = "left" style = "background-color:#d9d9d9; color:#800000; padding:5px;">
+        runGitHub("https://github.com/wandering007/export_app")<br>
+    </div>
+    <p align="justify">Host the app as web page<br>
+        see the result of the app directly in <a href="https://wandering007.shinyapps.io/export_app/">here</a>.</p></font>
+    </p>
+  </div>
+
+</div>
+<br>
+<br>
+<div class="container core-frame">
+  <div class="row">
+    <div id="footer">
+      Last updated on Friday, March 25 2016.<br>
+      Webmaster : <a href="">Nan Meng</a>
+    </div>
+  </div>
+</div>
+
+
+</body></html>

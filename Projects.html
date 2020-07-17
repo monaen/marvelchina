@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Workshop - Data Visualization of Chinese Culture  
+    </title>
+
+    <!-- Links -->
+    <link href="stylesheets/bootstrap-rev0.min.css" rel="stylesheet">
+    <link href="stylesheets/iris-rev3.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
+
+    <!-- Script files -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+        function showhide(id) {
+            var e = document.getElementById(id);
+            e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+        }
+    </script>
+    <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+  </head>
+
+
+  <body>
+  <div class="container core-frame">
+    <div class="row">
+      <h3  align = "center"><img src = "./image/logo.png" width = "150px"/><img id="img" src="./image/title.jpg" width = "640px" height = "96px"/></h3>
+      </br>
+    </div>
+  </div>
+  <div class="container core-frame">
+    <div class="row core-block header">
+      <nav>
+        <ul class="nav nav-pills pull-right">
+          
+            <li><a href="./index.html">Welcome</a></li>
+          
+            <li class="active"><a href="./Projects.html">Projects</a></li>
+          
+            <li><a href="./Online_API.html">Online API</a></li>
+          
+            <li><a href="./Contributors.html">Contributors</a></li>
+          
+            <li><a href="./Supplement.html">Supplement</a></li>
+        </ul>
+      </nav>
+      <h4 class="text-muted">Winter 2016</h4>
+    </div>
+  </div>
+
+
+
+
+  <div id="fl_menu" style="top: 50px;">
+      <div class="label" style="opacity: 0.75;">MENU</div>
+      <div class="menu" style="display: none;">
+          <a href="#Title" class="menu_item">The Influence of Chinese Culture</a>
+          <a href="#Abstract" class="menu_item">Abstract</a>
+          <a href="#Brief" class="menu_item">Brief Quantitative Analysis Of Culture With Digitized Books</a>
+          <a href="#Heritage" class="menu_item">World Heritage</a>
+          <a href="#Imports" class="menu_item">Imports and Exports of Different Regions of China</a>
+          <a href="#Book-Crossing" class="menu_item">Book-Crossing</a>
+          <a href="#Acknowledgement" class="menu_item">Acknowledgement</a>
+      </div>
+  </div>
+
+  <div class="container core-frame">
+  		<a name="Title"></a>
+        <h1 align="center"><font face = "Times"> The Influence of Chinese Culture</font></h1>  <br />
+
+        <p align="justify">
+            <font size = "4" face = "Times">
+                Recent years, China offers the greatest growth potential for international culture. Different cultural expressions such as  Chinese opera, kung fu, calligraphy, Confucius Institute, paintings have become more and more popular to people all around the world. The trend of internationalization of the Chinese culture shows a great vitality of chinese culture. This workshop based on some great previous work, however mainly focus on the visualization, in order to exhibit a more popular, more intuitive and clear result. Basiclly this people-friendly web site mean to quantitively show you differnet aspects of chinese culture, let people know the development of chinese culture better and easier and attract more people to engaged in this field. For your convenience, all the visualized data or relevant data source and the link of relevant previous work can be got directly. You may use these for future analysis. What's more, the core culture values reflected from different culture embodiments should be what we cherish most.Although there exist some differences between the Mainland China, Hong Kong, and Taiwan, the core culture values are shared by Chinese People no matter where they are. 
+            </font>
+        </p>
+
+        <br />
+        <br />
+        <a name="Abstract"></a>
+        <h2><font face = "Times"> Abstract </font></h2>
+
+        <p align="justify">
+            <font size = "4" face = "Times">
+                The purpose of our work is to exhibit the influence of chinese culture from different aspects in different levels. Previous work like (Michel et al. science(2011)) investigated the culture trend quantitively based on digitized books and (Schich Maximilian, et al. science(2014)) focused on the emergent processes driving cultural history. Basiclly, most of these works are famous and successful, but wide. Our work based on these previous work but more focus on chinese culture development and influence. What's more, our target audience are normal people they may not have enough specialized knowledge to understand what the great previous work do and what the results mean. Thus, there are many plots included in this website to intuitively show the power of chinese culture in different aspects and in order to make visitors more clear about the plots, there are some brief analysis followed each graph. 
+            </font>
+        </p>
+
+        <br />
+        <br />
+        <!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books -->
+        <!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books -->
+        <!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books --><!-- Digitized Books -->
+
+        <a name="Brief"></a>
+        <h2 align="center"><font face = "Times"> Brief Quantitative Analysis Of Culture With Digitized Books</font></h2>
+        <p align="justify"><font size = "4" face = "Times">This part will show you some data about books, another embodiment of culture influence. The dataset collected from many great previous work. Owing to the time limitation, we filter out some expired data and focus on the most useful part of dataset. Relavent analyses are all based on these data. For you convenience, part of the data have been viualized as graphs.</font>
+
+            <p><a name="BriefData"></a></p>
+            <h3><font face = "Times"> Data Information</font></h3> 
+            <p><font size = "4" face = "Times">The data used for this part is from the work [<a href="http://www.sciencemag.org/content/331/6014/176.abstract">Michel, et al. science(2011)</a>]. You can download the relevant data from the <a href="http://www.sciencemag.org/content/331/6014/176/suppl/DC1">web site</a>(SOM Data). We vituralized some of the information of <b>'number of words'</b> Sheet in order to present some trendency more intuitively.
+            The variables included in the vituralized dataset are: 
+            </font></p>
+              <ul>
+                <li><b>language:</b>&nbsp&nbsp Language of the corpus used to statis words.</li> 
+                <li><b>date:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp The time point of getting the result.</li> 
+                <li><b>number:</b>&nbsp&nbsp&nbsp&nbsp Total number of words in corpus within the time point.</li> 
+              </ul> 
+              <p align="justify"><font size = "4" face = "Times">A more direct form can be got from <a href="./PlotCode/3D-show-wheel/raw_data.xlsx">here</a>.The dataset is stored in a excel file(xlsx) including all the corpus information from the year 1850 to 2000. The following animation displays the number of words of 4 languages changing from the year 1850 to 2000. It shows from Line graph to donut map in turn.</font></p>
+        
+        <p><h2 align="center"><font face = "Times">The number of words in corpus of four languages</font></h2></p>
+        <table>
+          <tr>
+            <th class="tg-yw4l">
+                <div align="center">
+                    <iframe sandbox="allow-scripts allow-forms allow-same-origin" src="./PlotCode/3D-show-wheel/index.html" marginwidth="0" marginheight="0" scrolling="no" width='720px' height='500px' frameBorder='0'></iframe>
+                </div>
+            </th>
+            <th class="tg-yw4l" valign = "top">
+                <br/><br/><font size = "4" face = "Times">
+                <ul style="list-style-type:disc; text-align: text-top; width: 200px; overflow: auto;">
+                    <li style="float: left; margin: 0px 0 5px 0; width: 100px; text-align: left;">lines</li>  
+                    <li style="float: left; margin: 5px 0 5px 0; width: 100px; text-align: left;">horizons</li>   
+                    <li style="float: left; margin: 5px 0 5px 0; width: 100px; text-align: left;">areas</li>   
+                    <li style="float: left; margin: 5px 0 5px 0; width: 100px; text-align: left;">stacked areas</li>  
+                    <li style="float: left; margin: 5px 0 5px 0; width: 100px; text-align: left;">streamgraph</li>      
+                    <li style="float: left; margin: 5px 0 5px 0; width: 100px; text-align: left;">overlapping areas</li>
+                    <li style="float: left; margin: 5px 0 5px 0; width: 100px; text-align: left;">grouped bars</li>    
+                    <li style="float: left; margin: 5px 0 5px 0; width: 100px; text-align: left;">stacked bars</li>    
+                    <li style="float: left; margin: 5px 0 5px 0; width: 100px; text-align: left;">bars</li>       
+                    <li style="float: left; margin: 5px 0 5px 0; width: 100px; text-align: left;">donut</li>          
+                </ul></font>
+            </th>
+          </tr>
+        </table>
+
+        <p align="justify"> <font size = "4" face = "Times">The graphs reflect the fact that the number of Chinese words increased quickly in recent years compared with other three languages. Number of Russian words drop a little recently, however the total number is still large and very close to the third one French. While Spanish words increases relative smoothly. From the trendency, it is not hard to see the influence of chinese culture continues to grow. 
+        </font></p>
+
+        <br/><br/>
+        <!-- World Heritage --><!-- World Heritage --><!-- World Heritage --><!-- World Heritage --><!-- World Heritage --><!-- World Heritage -->
+        <!-- World Heritage --><!-- World Heritage --><!-- World Heritage --><!-- World Heritage --><!-- World Heritage --><!-- World Heritage -->
+        <!-- World Heritage --><!-- World Heritage --><!-- World Heritage --><!-- World Heritage --><!-- World Heritage --><!-- World Heritage -->
+        <a name="Heritage"></a>
+        <h2 align="center"><font face = "Times">World Heritage</font></h2>
+        <p align="justify">
+            <font size = "4" face = "Times">
+                Heritage is the divine creation of predecessors, what we live with today and what we pass on to future generations. As crystallizaiton of wisdom, heritage not only shows cultural accumulation, but also importantly it reflects the influence of different cultures. In this part, we will explore the dataset contains information of world heritage from year 1978 to year 2015. The dataset has been collected from the <a href = "http://whc.unesco.org">site</a> maintained by the international World Heritage Programme administered by the <strong>UNESCO</strong>(United Nations Education, Scientific and Cultural Organization) <a href = "https://en.wikipedia.org/wiki/World_Heritage_Committee">World Heritage Committee</a> and it contains 1031 sites: 802 cultural, 197 natural, and 32 mixed properties in 163 states parties. The top countries to the greatest number of World Heritage according to the sites is Italy(51 sites), China(48 sites), Spain(44 sites), France(41 sites), Germany(40 sites), Mexico(33 sites), and India(32 sites). The following of this part, we provide you a symbol map showing all the sites distributed all around the world, so you can clearly see that Europe contributes most of the heritage sites, followed by Asia, America, Africa etc. Colors represent different years the heritages have been inscribed, that is the color of site more close to red, the inscribed date is more recent. Crossfilter technique has been used in this symbol map to provide you some ''freedom''. If you want to see the result of a specific range of year, just choose the corresponding years and the symbol map will show you the result simultaneously. 
+            </font>
+        </p>
+        <p align="justify">
+            <p  align="justify"></p>
+            <h3><font face = "Times">Data Information</font></h3>
+            <p  align="justify"><font size = "4" face = "Times">
+                The World Heritage Dataset used in this part can be found at <a href="http://whc.unesco.org">UNESCO</a> official website. They also provide a symbol map visulization of World Heritages(you can find it at <a href = "http://whc.unesco.org/en/list">here</a>). Our work provide a more detailed and faster symbol map with crossfilter support. Thus, you can filter some useless sites from the symbol map by choosing the different intervals of year. The information of each site contains "<em>Site Name</em>", "<em>Unique ID Number</em>", "<em>Short Description</em>", "<em>Justification</em>", "<em>Date Inscribed</em>", "<em>Longitude</em>", "<em>Latitude</em>", "<em>Area(hectares)</em>", "<em>Category</em>" and "<em>States</em>" etc. Here we list an example of some important information items:</br></font>
+            </p>
+                <ul>
+                    <li><b>Site Name:</b>
+                    <p>Cultural Landscape and Archaeological Remains of the Bamiyan Valley</p></li> 
+                    <li><b>Unique ID Number:</b>
+                    <p>230(for Cultural Landscape and Archaeological Remains of the Bamiyan Valley)</p></li> 
+                    <li><b>Short Description:</b> 
+                    <p>The cultural landscape and archaeological remains of the Bamiyan Valley represent the artistic and religious developments which from the 1st to the 13th centuries characterized ancient Bakhtria, integrating various cultural influences into the Gandhara school of Buddhist art. The area contains numerous Buddhist monastic ensembles and sanctuaries, as well as fortified edifices from the Islamic period. The site is also testimony to the tragic destruction by the Taliban of the two standing Buddha statues, which shook the world in March 2001.</p></li> 
+                    <li><b>Justification:</b>
+                    <p><em>Criterion (i):</em> The Buddha statues and the cave art in Bamiyan Valley are an outstanding representation of the Gandharan school in Buddhist art in the Central Asian region.</p>
+                    <p><em>Criterion (ii)</em> : The artistic and architectural remains of Bamiyan Valley, and an important Buddhist centre on the Silk Road, are an exceptional testimony to the interchange of Indian, Hellenistic, Roman, Sasanian influences as the basis for the development of a particular artistic expression in the Gandharan school. To this can be added the Islamic influence in a later period.</p>
+                    <p>......</p></li>
+                    <li><b>Date Inscribed:</b> &nbsp&nbsp&nbsp&nbsp 2003</li>
+                    <li><b>Longitude:</b>      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 67.825</li>
+                    <li><b>Latitude:</b>       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 34.847</li>
+                    <li><b>Area(hectares):</b> &nbsp&nbsp&nbsp 158.93</li>
+                    <li><b>Category:</b>       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Cultural</li>
+                    <li><b>States:</b>         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Afghanistan</li>
+                </ul> 
+                <font size = "4" face = "Times">
+                    The dataset can be download on the <a href="http://whc.unesco.org/en/syndication">UNESCO Website</a> or <a href="">here</a>.
+                </font>
+        </p>
+
+        <p align="justify"><font size = "4" face = "Times">The following symbol map shows the distribution of heritages all around the world. With the help of crossfilter technique you can visulize a specific time interval information. </font></p>
+        <p><h2 align="center"><font face = "Times">World Heritage Distribution</font></h2></p>
+        <div align="left">
+            <iframe src="./PlotCode/World-Heritage-List/World-Heritage-List/webpage/index.html" marginwidth="0" marginheight="0" scrolling="no" width='940px' height='700px' frameBorder='0'></iframe>
+        </div>
+        <p align = "justify">
+          <font size = "4" face = "Times">
+            <b>Note:</b> Different colors represent differnet time interval of year. Color more close to red means the corresponding inscribed date is in the more recent time interval. Here we use five colors(gradually from yellow to red) to show the five different time intervals. These five time intervals and their matching color are:
+            <div >
+                <table align = "center">
+                  <tr>
+                    <th class="tg-yw4l">
+                      <svg height="16" width="18">
+                          <circle cx="8" cy="8" r="8" stroke="" stroke-width="3" fill="#FFFF66"/> 
+                      </svg> &nbsp 1978-1995 &nbsp&nbsp&nbsp&nbsp 
+                    </th>
+                    <th class="tg-yw4l">
+                      <svg height="16" width="18">
+                          <circle cx="8" cy="8" r="8" stroke="" stroke-width="3" fill="#FFFF00"/> 
+                      </svg> &nbsp 1996-2000 &nbsp&nbsp&nbsp&nbsp 
+                    </th>
+                    <th class="tg-yw4l">
+                      <svg height="16" width="18">
+                          <circle cx="8" cy="8" r="8" stroke="" stroke-width="3" fill="#E68000"/> 
+                      </svg> &nbsp 2001-2005 &nbsp&nbsp&nbsp&nbsp 
+                    </th>
+                    <th class="tg-yw4l">
+                      <svg height="16" width="18">
+                          <circle cx="8" cy="8" r="8" stroke="" stroke-width="3" fill="#D94000"/> 
+                      </svg> &nbsp 2006-2010 &nbsp&nbsp&nbsp&nbsp 
+                    </th>
+                    <th class="tg-yw4l">
+                      <svg height="16" width="18">
+                          <circle cx="8" cy="8" r="8" stroke="" stroke-width="3" fill="#CC0000"/> 
+                      </svg> &nbsp 2011-2015 &nbsp&nbsp&nbsp&nbsp 
+                    </th>
+                  </tr>
+                </table>
+            </div>
+          </font>
+        </p>
+        
+        <!-- Data Analysis -->
+        <p align = "justify"><font size = "4" face = "Times"> 
+            From the symbol map, it is obviously that the number of heritages of China increases faster in recent years, and also China now is the second-greatest country of heritages. So you can see the incresing influence of chinese, juse consider the raw increase in the number of heritage.</font>
+        </p>
+
+<!-- Imports and Exports --><!-- Imports and Exports --><!-- Imports and Exports --><!-- Imports and Exports -->
+<!-- Imports and Exports --><!-- Imports and Exports --><!-- Imports and Exports --><!-- Imports and Exports -->
+<!-- Imports and Exports --><!-- Imports and Exports --><!-- Imports and Exports --><!-- Imports and Exports -->
+
+</br></br>
+          <p><a name="Imports"></a></p>
+          <h2 align="center"><font face="Times">Imports and Exports of Different Regions of China</font></h2>
+          <p align="justify">
+            <font size = "4" face = "Times">
+                Another important aspect reflecting the influence of chinese culture is cultural publication and in this part, we only focus on the books, magazines and newspapers. We collect the publication data of 6 categories(i.e. "<em>Philosopy Social Science</em>", "<em>Culture and Education</em>", "<em>Literature and Art</em>", "<em>Natural Science and Science and Technology(S&T)</em>", "<em>For Children</em>", "<em>General Books</em>" ) from year 2008 to 2014. All of the data can be found on the website of 
+                <a href = "http://www.stats.gov.cn/tjsj/ndsj/">China Yearbook</a>. A new visualization technique -- Radio has been introduced into this part to provide a user-friendly plot. The following part shows Imports and Exports information of Books, Magazines and Newspapers respectively, including number of these three kinds of publications and their total price. You can change different "state" to see differnet information. State <b>Grouped</b> reflects proportion of different categories of publications and state <b>Stacked</b> shows the tendency of publications as a whole). Also you can add or remove any category to get the information you want.
+            </font>
+        </p><br/>
+          <div align="center">
+              <table>
+                  <tbody>
+                  <tr>
+                      <h4 align="center"><font size = "5" face = "Times">The Number of Exports of Publications(10,000 copies)</font></h4><br />
+                      <iframe sandbox="allow-scripts allow-forms allow-same-origin" src="./PlotCode/NVD3-Bar-Plot/Export_Num.html" marginwidth="0" marginheight="0" scrolling="no" width='700px' height='300px' frameBorder='0'></iframe>
+                  </tr>
+                  <tr>
+                      <h4 align="center"><font size = "5" face = "Times">The Total Price of Exports of Publications(10,000 USD)</font></h4><br />
+                      <iframe sandbox="allow-scripts allow-forms allow-same-origin" src="./PlotCode/NVD3-Bar-Plot/Export_Value.html" marginwidth="0" marginheight="0" scrolling="no" width='700px' height='300px' frameBorder='0'></iframe>
+                  </tr>
+                  <tr>
+                      <h4 align="center"><font size = "5" face = "Times">The Number of Imports of Publications(10,000 copies)</font></h4><br />
+                      <iframe sandbox="allow-scripts allow-forms allow-same-origin" src="./PlotCode/NVD3-Bar-Plot/Import_Num.html" marginwidth="0" marginheight="0" scrolling="no" width='700px' height='300px' frameBorder='0'></iframe>
+                  </tr>
+                  <tr>
+                      <h4 align="center"><font size = "5" face = "Times">The Total Price of Imports of Publications(10,000 USD)</font></h4><br />
+                      <iframe sandbox="allow-scripts allow-forms allow-same-origin" src="./PlotCode/NVD3-Bar-Plot/Import_Value.html" marginwidth="0" marginheight="0" scrolling="no" width='700px' height='300px' frameBorder='0'></iframe>
+                  </tr>
+              </tbody>
+              </table>
+          </div>
+
+
+
+          <div align = "center">
+              <p align="justify">
+                <font size = "4" face = "Times">
+                    In order to see the proportion of different categories more clearly, the next gallary displays polar graphs for Imports and Exports informations(Number of copies and price value) respectively. Thus, you will have a more comprehensive concepts.
+                </font>
+              </p>
+
+              <div align="center">
+                <iframe src="./PlotCode/gallery/index.html" marginwidth="0" marginheight="0" scrolling="no" width='740px' height='560px' frameBorder='0'></iframe>
+              </div>
+          </div>
+          <p align = "justify">
+              <font size = "4" face = "Times">
+                  <b>Note:</b> Six groups shown in the gallery represent six categories respectively, i.e. "<em>Philosopy Social Science</em>", "<em>Culture and Education</em>", "<em>Literature and Art</em>", "<em>Natural Science and Science and Technology(S&T)</em>", "<em>For Children</em>", "<em>General Books</em>". These six groups are:
+                  <div >
+                    <table align = "center">
+                      <tr>
+                        <th class="tg-yw4l">
+                            <svg height="16" width="16">
+                                <rect width="16" height="16" stroke="" stroke-width="3" fill="#08519C"/> 
+                            </svg> &nbsp&nbsp <b>Philosopy Social Science</b> &nbsp&nbsp&nbsp&nbsp
+                        </th>
+                        <th class="tg-yw4l">
+                            <svg height="16" width="16">
+                              <rect width="16" height="16" stroke="" stroke-width="3" fill="#3182BD"/> 
+                            </svg> &nbsp&nbsp <b>Culture and Education</b> &nbsp&nbsp&nbsp&nbsp
+                        </th>
+                        <th class="tg-yw4l">
+                            <svg height="16" width="16">
+                              <rect width="16" height="16" stroke="" stroke-width="3" fill="#6BAED6"/> 
+                            </svg> &nbsp&nbsp <b>Literature and Art</b> &nbsp&nbsp&nbsp&nbsp
+                        </th>
+                      </tr>
+                      <tr>
+                        <td class="tg-yw4l">
+                            <svg height="16" width="16">
+                              <rect width="16" height="16" stroke="" stroke-width="3" fill="#9ECAE1"/> 
+                            </svg> &nbsp&nbsp <b>Natural Science and S&T</b> &nbsp&nbsp&nbsp&nbsp
+                        </td>
+                        <td class="tg-yw4l">
+                            <svg height="16" width="16">
+                              <rect width="16" height="16" stroke="" stroke-width="3" fill="#C6DBEF"/> 
+                            </svg> &nbsp&nbsp <b>For Children</b> &nbsp&nbsp&nbsp&nbsp
+                        </td>
+                        <td class="tg-yw4l">
+                            <svg height="16" width="16">
+                              <rect width="16" height="16" stroke="" stroke-width="3" fill="#EFF3FF"/> 
+                            </svg> &nbsp&nbsp <b>General Books</b> &nbsp&nbsp&nbsp&nbsp
+                        </td>
+                      </tr>
+                    </table>
+
+                  </div>
+              </font>
+          </p>
+
+
+            <h4>The following plot is generated using R shiny</h4>
+            <div align="center">
+                <iframe src="https://wandering007.shinyapps.io/export_app/" marginwidth="0" marginheight="0" scrolling="no" width='740px' height='800px' frameBorder='0'></iframe>
+            </div>
+            <div align = "right">
+            <button type="button" onclick="javascript:showhide('uniquename')">
+                How to use
+            </button>
+            </div>
+            <div id="uniquename" style="display:none;">
+                <br />
+                <p align="justify"><font size = "4" face = "Times">
+                A Shiny app visualizing the export status of cultural publication of China from 2008 to 2014.
+				
+				<p align="justify"><strong>Ways to use the app:</strong><br>Download the repository to local. Launch the app in R with the following commands:</p>
+				<div align = "left" style = "background-color:#d9d9d9; color:#800000; padding:5px;">
+					<p style="color:green;">#install.packages("shiny")<br>
+					#setwd("/path/to/local/") --set the working directory<br></p>
+					library(shiny)<br>
+					runApp("export_app")<br>
+					runUrl
+				</div>
+				<p align="justify">I've saved the Shiny app's directory as a zip file(i.e. export_app.zip). runUrl will download and launch a Shiny app straight from a weblink. That is:</p>
+				<div align = "left" style = "background-color:#d9d9d9; color:#800000; padding:5px;">
+					library(shiny)<br>
+					runUrl("https://raw.githubusercontent.com/wandering007/export_app/master/export_app.zip")<br>
+					runGitHub
+				</div>
+				<p align="justify">You can launch the app by running:</p>
+				<div align = "left" style = "background-color:#d9d9d9; color:#800000; padding:5px;">
+					runGitHub("https://github.com/wandering007/export_app")<br>
+				</div>
+				<p align="justify">Host the app as web page<br>
+				see the result of the app directly in <a href="https://wandering007.shinyapps.io/export_app/">here</a>.</p></font>
+				</p>
+            </div>
+            <br/>
+
+
+<!--Part 4-->
+<!--Part 4-->
+<!--Part 4-->
+<!--Part 4-->
+
+
+
+</br></br>
+          <p><a name="Book-Crossing"></a></p>
+          <h2 align = "center"><font face = "Times">Book-Crossing</font></h2>
+          <p align = "justify">
+              <font size="4" face="Times">
+              BookCrossing(also know as <b>BC, BCing</b> or <b>BXing</b>) refer to the practice of leaving a book in a public place to be picked up and read by others. With the help of Internet(<a href = "http://www.bookcrossing.com">Book-Crossing website</a>), different kinds of books can be transfer to other countries. Those transferred books show a message of friendship and love on one hand, and on the other hand they also promote the dissemination of culture. In this part, we focus on the dataset collected by Cai-Nicolas Ziegler using a crawler to crawl 4-week data from the <a href = "http://www.bookcrossing.com">Book-Crossing website</a>. The dataset contains 278,858 users who provides 1,149,780 ratings about 271,379 books.(more detailed information please refer to <a href = "http://www2.informatik.uni-freiburg.de/~cziegler/BX/">Book-Crossing Dataset</a>)
+              </font>
+          </p>
+
+
+          <p><a name="RegionalData"></a></p>
+          <h3><font face = "Times">Data Information</font></h3>
+          <p><font size = "4" face = "Times">The Book-Crossing dataset contains three tables, i.e. <b>BX-Users</b>, <b>BX-Books</b>, <b>BX-Book-Ratings</b></font></p>
+
+          <ul style="list-style-type:disc">
+              <li><b>BX-Users:</b> <p>Contains the users. Note that user IDs(<em>'User-ID'</em>) have been map to some integers for user privacy. Demographic data is offered(<em>'Location', 'Age'</em>) if available. Otherwise, these fields contain <em>NULL</em>-values.</p>
+              </li>
+              <li><b>BX-Books:</b> <p>Contains information of books. Books are identified by their respective ISBN, and also some content-based information is given(<em>'Book-Title', 'Book-Author', 'Year-Of-Publication', 'Publisher'</em>), obtained from Amazon Web Services. URLs linking to cover images are also given, appearing in three different flavours(<em>'Image-URL-S', 'Image-URL-M', 'Image-URL-L'</em>), i.e., small, medium, and large.</p>
+              </li>
+              <li><b>BX-Books-Ratings:</b> <p>Contains the book rating information. Ratings(<em>'Book-Rating'</em>) are either, expressed on a scale from 1-10(higher values denoting higher apperciation), or implicit, expressed by 0.</p>
+              </li>
+          </ul>
+
+
+          <p align="justify">
+              <font size = "4" face = "Times">
+              The following 3D graph visualizes the statistic number and distribution of Book-Crossing website users. The range of original values is too large, so we map the original values to new values with a small range. The mapping function can be seen as a weighted piecewise linear function. Let's say the original value is <img src="http://latex.codecogs.com/gif.latex?x" border="0"/>, then the mapping function <img src="http://latex.codecogs.com/gif.latex?f(x)" border="0"/> can be expressed as:
+              </font>
+              <div lang="latex" align="center">
+                  f(x) = \frac{1}{5} \times \begin{cases}
+                                            \frac{x}{10} & x < 10 \\
+                                            \frac{1}{90} \cdot x + \frac{8}{9} & 10 \leq x < 100 \\
+                                            \frac{1}{1000} \cdot x + 1.9 & x \geq 100 \\
+                                            \end{cases}.
+              </div>
+              <font size="4" face="Times">
+              The function is defined by experience and designed for a better visual effect. You can see the final visualized 3D graph as follows:
+              </font>
+          </p>
+
+          <p><h2 align="center"><font face = "Times">The Number and Distribution of Book-Crossing Users</font></h2></p>
+
+          <div align="center">
+              <iframe sandbox="allow-scripts allow-forms allow-same-origin" src="./PlotCode/Book_Crossing/index.html" marginwidth="0" marginheight="0" width='760px' height='600px' frameBorder='0' scrolling="no" style="overflow-x:hidden;"></iframe>
+          </div>
+          <br/>
+          <p align="justify">
+              <font size="4" face="Times">
+                  The above parts reflect the influence of Chinese Culture in different aspects including Digitized Books, World Heritage, Publications and Book-Crossing activity. The purpose of this project is visualizing some previous work for ordinary people and helping them to understand what social scientists have done on culture influence.
+              </font>
+          </p>
+          <h2 align="left"><font face = "Times">Acknowledgement</font><a name="Acknowledgement"></a> </h2>
+          <p align="justify">
+              <font size = "4" face = "Times">
+                  This project was for Big Data Workshop. We thank the author of [<a href="http://www.sciencemag.org/content/331/6014/176.abstract">Michel, et al. science(2011)</a>] and [<a href="http://www2.informatik.uni-freiburg.de/~cziegler/BX/">Cai-Nicolas, et al. ACM(2005)</a>] and websites <a href = "http://whc.unesco.org">UNESCO</a> and <a href = "http://www.stats.gov.cn/tjsj/ndsj/">China Statistical Yearbook</a> for providing the dataset. Techniques used for visualization include <a href = "https://d3js.org">D3js</a>, <a href = "https://www.chromeexperiments.com/globe">webgl-globe</a>, <a href = "http://nvd3.org">NVD3</a>, <a href = "https://www.r-project.org">R</a>. Thanks to this powerful softwares and techniques, we are able to make this charming project.
+              </font>
+          </p>
+</div>
+
+
+
+    <div class="container core-frame">
+      <div class="row">
+        <div id="footer">
+          Last updated on Friday, March 25 2016.<br>
+          Webmaster : <a href="">Nan Meng</a>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+    //config
+    $float_speed=1500; //milliseconds
+    $float_easing="easeOutQuint";
+    $menu_fade_speed=500; //milliseconds
+    $closed_menu_opacity=0.75;
+
+    //cache vars
+    $fl_menu=$("#fl_menu");
+    $fl_menu_menu=$("#fl_menu .menu");
+    $fl_menu_label=$("#fl_menu .label");
+
+    $(window).load(function() {
+        menuPosition=$('#fl_menu').position().top;
+        FloatMenu();
+        $fl_menu.hover(
+            function(){ //mouse over
+                $fl_menu_label.fadeTo($menu_fade_speed, 1);
+                $fl_menu_menu.fadeIn($menu_fade_speed);
+            },
+            function(){ //mouse out
+                $fl_menu_label.fadeTo($menu_fade_speed, $closed_menu_opacity);
+                $fl_menu_menu.fadeOut($menu_fade_speed);
+            }
+        );
+    });
+
+    $(window).scroll(function () { 
+        FloatMenu();
+    });
+
+    function FloatMenu(){
+        var scrollAmount=$(document).scrollTop();
+        var newPosition=menuPosition+scrollAmount;
+        if($(window).height()<$fl_menu.height()+$fl_menu_menu.height()){
+            $fl_menu.css("top",menuPosition);
+        } else {
+            $fl_menu.stop().animate({top: newPosition}, $float_speed, $float_easing);
+        }
+    }
+    </script>
+
+  </body>
+
+</html>
