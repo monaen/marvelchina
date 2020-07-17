@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="demoStyleSheet.css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="fadeSlideShow.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery('#slideshow').fadeSlideShow();
+});
+</script>
+</head>
+
+<body>
+<div id="slideshowWrapper">
+    <ul id="slideshow">
+        <li><img src="images/4.svg" width="640" height="480" border="0" alt="" /></li> <!-- This is the last image in the slideshow -->
+        <li><img src="images/3.svg" width="640" height="480" border="0" alt="" /></li>
+        <li><img src="images/2.svg" width="640" height="480" border="0" alt="" /></li>
+        <li><img src="images/1.svg" width="640" height="480" border="0" alt="" /></li> <!-- This is the first image in the slideshow -->
+    </ul><br clear="all" />
+</div>
+
+</body>
+</html>

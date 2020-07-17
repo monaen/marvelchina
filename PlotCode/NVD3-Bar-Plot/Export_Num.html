@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html meta-charset="utf-8">
+
+
+<script src = "http://d3js.org/d3.v3.js"></script>
+<script src = "http://cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.js"></script>
+
+<link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.css">
+
+
+<div id = "chart1">
+  <svg></svg>
+</div>
+
+<script>
+    d3.csv("Export_Num.csv",function(err,data){
+      
+      //get each key of the data that is not date
+      //these will be our key in the key/value pair
+      //the values x and y will be month and the value
+      var dataToPlot = Object.keys(data[0]).filter(function(k){return k!="date"})
+        .map(function(k){
+          return {"key":k,"values":data.map(function(d){
+           return {
+             //let's make this a real date
+             "x":d3.time.format("%Y").parse(d.date),
+             "y":+d[k]
+           }
+          })}
+        })
+        
+      nv.addGraph(function() {
+        var width = 700, height = 300;
+        chart = nv.models.multiBarChart()
+          .transitionDuration(350)
+          .reduceXTicks(true)   //If 'false', every single x-axis tick label will be rendered.
+          .rotateLabels(0)      //Angle to rotate x-axis labels.
+          .showControls(true)   //Allow user to switch between 'Grouped' and 'Stacked' mode.
+          .groupSpacing(0.1)    //Distance between each group of bars.
+          // .margin({top:150,right:150,bottom:150,left:150})
+          .width(width)
+          .height(height)
+        ;
+    
+        chart.xAxis
+            .tickFormat(d3.time.format('%Y'));
+    
+        chart.yAxis
+            .tickFormat(d3.format(',.2f'));
+
+        // chart.height(200)
+    
+        d3.select('#chart1 svg')
+            .datum(dataToPlot)
+            .call(chart)
+            .attr('width', width)
+            .attr('height', height);
+    
+        nv.utils.windowResize(chart.update);
+    
+        return chart;
+      });
+    
+    })
+  //})
+
+  
+</script>
+
+</html>
+<!-- 
+data.csv
+#
+
+date,Equipment:Electricity:LGF,Equipment:Electricity:GF,Equipment:Electricity:1st,Equipment:Electricity:2nd
+jan,6726.864146,5648.080727,2598.709507,2042.260163
+feb,6405.091236,5377.910358,2474.402801,1944.570663
+mar,6727.448125,5648.571054,2598.935109,2042.437457
+apr,6433.12227,5401.446071,2485.231698,1953.080819
+may,6993.742947,5872.160325,2701.809623,2123.28394
+jun,6433.12227,5401.446071,2485.231698,1953.080819
+jul,6727.448125,5648.571054,2598.935109,2042.437457
+aug,6993.742947,5872.160325,2701.809623,2123.28394
+sep,6166.827448,5177.8568,2382.357183,1872.234336
+oct,6993.742947,5872.160325,2701.809623,2123.28394
+nov,6699.417092,5625.035342,2588.106212,2033.927301
+dec,6167.411428,5178.347127,2382.582785,1872.411631
+
+timelyportfolio’s block #c7c9dbc75975df7322bd July 28, 2014
+ -->

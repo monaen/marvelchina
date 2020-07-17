@@ -1,0 +1,43 @@
+{
+    "name": "simplefadeslideshow",
+    "title": "Simple Fade SlideShow",
+    "description": "Simple Fade SlideShow is a very simple and easy to use fade-image slideshow. Its structure is very flexible and you can use it for image and / or content transition. Simple Fade SlideShow is highly customizable with CSS and it can either create the list and buttons automatically or you can create your own individual elements and Simple Fade SlideShow will only bind the relevant functions.",
+    "keywords": [
+        "slideshow",
+        "animation",
+        "effect",
+        "fade",
+        "slider",
+        "transition",
+        "options",
+        "ui",
+        "jquery",
+        "image"
+    ],
+    "version": "2.2.0",
+    "author": {
+        "name": "Pascal Bajorat",
+        "url": "https://www.pascal-bajorat.com"
+    },
+    "maintainers": [
+        {
+            "name": "Pascal Bajorat",
+            "email": "pascal@pascal-bajorat.com",
+            "url": "https://www.pascal-bajorat.com"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "GPL",
+            "url": "http://www.gnu.org/licenses/gpl.txt"
+        }
+    ],
+    "bugs": "https://github.com/pascalbajorat/simplefadeslideshow/issues",
+    "homepage": "http://www.simplefadeslideshow.com/",
+    "demo": "http://www.simplefadeslideshow.com/",
+    "docs": "http://www.simplefadeslideshow.com/documentation/",
+    "download": "http://www.simplefadeslideshow.com/download/",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}

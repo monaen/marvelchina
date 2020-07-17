@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="filter.css" />
+<body>
+	<span>
+		<h1>World Heritage from 1978 to 2015</h1>
+		<span id="instructions">
+			Mouseover and click map for details. Click and drag histograms to crossfilter.
+		</span>
+	</span>
+	<div id="charts">
+		<div id="map" class="display"></div>
+
+		<div id="year-chart" class="chart display">
+			<div class="title">Year of Inscription</div>
+		</div>
+
+		<div id="mass-chart" class="chart display">
+			<div class="title">Area Hectare</div>
+		</div>
+	</div>
+
+
+</body>
+
+<script src="lib/d3.js"></script>
+<script src="lib/topojson.js"></script>
+<script src="lib/queue.js"></script>
+<script src="lib/crossfilter.js"></script>
+<script src="barChart.js"></script>
+<script src="drawMap.js"></script>
+
+</html>
